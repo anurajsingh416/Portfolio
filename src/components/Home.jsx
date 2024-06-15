@@ -17,7 +17,7 @@ export default function Home({theme, changeColor}){
             </div>
         <button onClick={()=>{
             changeColor();
-        }} className={`fixed rounded-full hover:scale-105 transition-all duration-400 p-3 bottom-10 right-8 ${theme ?"bg-gray-600 text-white":"text-gray-800 bg-white "}`} >{theme?<MdOutlineDarkMode className='font-bold' size={20}/>:<MdOutlineLightMode  className='font-bold' size={20}/>}</button>
+        }} className={`fixed z-10 rounded-full hover:scale-105 transition-all duration-400 p-3 bottom-10 right-8 ${theme ?"bg-gray-600 text-white":"text-gray-800 bg-white "}`} >{theme?<MdOutlineDarkMode className='font-bold' size={20}/>:<MdOutlineLightMode  className='font-bold' size={20}/>}</button>
         </div>
         </Element>
     );
